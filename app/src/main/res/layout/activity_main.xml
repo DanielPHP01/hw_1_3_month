@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="200dp"
+    android:layout_marginHorizontal="50dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:background="@drawable/backgraund"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/ic_baseline_local_post_office_24"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="email"
+        />
+    <EditText
+        android:id="@+id/edit_text_one"
+        android:drawableStart="@drawable/ic_baseline_reorder_24"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/backgraund"
+        android:hint="theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_text_two"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/backgraund"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="text"
+        android:ems="10" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:text="SEND" />
+
+</LinearLayout>
