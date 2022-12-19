@@ -9,40 +9,45 @@
     android:layout_marginHorizontal="50dp"
     tools:context=".MainActivity">
 
-
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:background="@drawable/backgraund"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:textColor="@color/black"
         android:drawableStart="@drawable/ic_baseline_local_post_office_24"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:hint="email"
-        />
+        android:hint="@string/email"
+        android:autofillHints="emailAddress" />
+
     <EditText
         android:id="@+id/edit_text_one"
         android:drawableStart="@drawable/ic_baseline_reorder_24"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:textColor="@color/black"
         android:ems="10"
         android:layout_marginTop="30dp"
         android:background="@drawable/backgraund"
-        android:hint="theme"
+        android:hint="@string/theme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/edit_text_two"
         android:layout_marginTop="30dp"
+        android:textColor="@color/black"
         android:background="@drawable/backgraund"
         android:drawableStart="@drawable/ic_baseline_message_24"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:hint="text"
-        android:ems="10" />
-
-
+        android:hint="@string/text"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/button"
@@ -50,6 +55,5 @@
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:textSize="20sp"
-        android:text="SEND" />
-
+        android:text="@string/send" />
 </LinearLayout>

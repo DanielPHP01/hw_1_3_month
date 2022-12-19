@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">hw_1_3_month</string>
+    <string name="email">email</string>
+    <string name="theme">theme</string>
+    <string name="text">text</string>
+    <string name="send">SEND</string>
 </resources>
